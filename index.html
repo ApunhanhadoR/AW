@@ -1,0 +1,492 @@
+
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./stylesheet.css">
+    <title>Lista de Campeões</title>
+	<script type='text/javascript'>//<![CDATA[
+window.onload=function(){
+var filtro = document.getElementById('filtro-tags');
+var tabela = document.getElementById('lista');
+filtro.onkeyup = function() {
+    var nomeFiltro = filtro.value;
+    var nomeFiltroSC = nomeFiltro.toLowerCase();
+    for (var i = 1; i < tabela.rows.length; i++) {
+        var conteudoCelula = tabela.rows[i].cells[2].innerText;
+        var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltroSC) >= 0;
+        tabela.rows[i].style.display = corresponde ? '' : 'none';
+    }
+};
+
+}//]]> 
+
+</script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <h1 id="project_title">Lista de Campeões - AW</h1>
+          <h2 id="project_tagline">Mantido por Vik Rafa e ApunhanhadoR</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="listagem-de-etiquetas-de-campeões" class="anchor" href="#listagem-de-etiquetas-de-campe%C3%B5es" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Listagem de etiquetas de campeões.<br>Para pesquisa insira no campo abaixo o texto desejado.</h3>
+
+<table id="lista">
+<thead>
+<tr>
+<th>Campeão</th>
+<th align="center">Classe</th>
+<th align="center"><div>Tags</div><div><input id="filtro-tags"/></div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ciclope</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Ofensivo: Surto de Dano #Herói #X-Men</code></td>
+</tr>
+<tr>
+<td>Ciclope (Nova Escola Xavier)</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Ofensivo: Surto de Dano #Herói #X-Men</code></td>
+</tr>
+<tr>
+<td>Colossus</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Defensivo: Sentinela #Herói #Metal #X-Men X-Force</code></td>
+</tr>
+<tr>
+<td>Deadpool</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Defensivo: Utilidade #Mercenário #X-Men</code></td>
+</tr>
+<tr>
+<td>Deadpool X-Force</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Ofensivo: Dano ao longo do tempo #Mercenário #X-force</code></td>
+</tr>
+<tr>
+<td>Magneto</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Ofensivo: Dano ao longo do tempo #Vilão #Illuminati #X-Force</code></td>
+</tr>
+<tr>
+<td>Magneto (Nova Marvel)</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Ofensivo: Dano ao longo do tempo #Herói #X-Men</code></td>
+</tr>
+<tr>
+<td>Old Logan</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Ofensivo: Surto de dano #Herói #Metal #X-Men</code></td>
+</tr>
+<tr>
+<td>Tempestade</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Ofensivo: Surto de Dano #Herói #X-Men #X-Force</code></td>
+</tr>
+<tr>
+<td>Wolverine</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Defensivo: Utilidade #Herói #Metal #X-Men #Novos Vingadores #X-Force</code></td>
+</tr>
+<tr>
+<td>X-23</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Ofensivo: Dano ao longo do tempo #Herói #Metal #Thunderbolts #X-Force</code></td>
+</tr>
+<tr>
+<td>Noturno</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Defensivo:Utilidade #Herói #X-Men</code></td>
+</tr>
+<tr>
+<td>Gambit</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Ofensivo: Surto de dano #Herói #X-Men</code></td>
+</tr>
+<tr>
+<td>Fera</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Ofensivo: Dano Bruto #Herói #X-Men #Illuminati</code></td>
+</tr>
+<tr>
+<td>Jean grey</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Ofensivo: Surto de Dano #Herói #X-Men</code></td>
+</tr>
+<tr>
+<td>Vampira</td>
+<td align="center">Mutante</td>
+<td align="center"><code>#Controle: Contra-ataque #Herói #X-Men #Força-A</code></td>
+</tr>
+<tr>
+<td>Colossus Fanático</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Defensivo: Utilidade #Vilão #Metal #X-Men</code></td>
+</tr>
+<tr>
+<td>Dr. Estranho</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Controle: Negação #Herói #Illuminati</code></td>
+</tr>
+<tr>
+<td>Fanático</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Defensivo: Tanque #Vilão #Thunderbolts</code></td>
+</tr>
+<tr>
+<td>Feiticeira Escarlate</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Controle: Negação #Herói #Vingadores #Guerra Civil - Cap. América #Força-A</code></td>
+</tr>
+<tr>
+<td>Guillotine</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Controle: Contra-ataque #Herói #Metal</code></td>
+</tr>
+<tr>
+<td>Vodoo</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Controle: Negação #Herói #Vingadores #S.H.I.E.L.D.</code></td>
+</tr>
+<tr>
+<td>Mordo</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Controle: Contra-ataque</code></td>
+</tr>
+<tr>
+<td>Magia</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Controle: Negação #Herói #X-Men #S.H.I.E.L.D.</code></td>
+</tr>
+<tr>
+<td>Punho de Ferro</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Ofensivo: Surto de dano #Herói #Defensores</code></td>
+</tr>
+<tr>
+<td>Punho de Ferro (Roupa Branca)</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Ofensivo: Surto de Dano #Herói #Novos Vingadores</code></td>
+</tr>
+<tr>
+<td>Thor (Jane Foster)</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Ofensivo: Surto de Dano #Herói #Novos Vingadores</code></td>
+</tr>
+<tr>
+<td>Loki</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Controle: Negação #Vilão #Vilão do Torneio</code></td>
+</tr>
+<tr>
+<td>Motoqueiro Fantasma</td>
+<td align="center">Místico</td>
+<td align="center"><code>#Controle: Contra-ataque #Herói #Defensores #Thunderbolts #Campeões</code></td>
+</tr>
+<tr>
+<td>Homem de Ferro</td>
+<td align="center">Tecnológico</td>
+<td align="center"><code>#Defensivo: Sentinela #Herói #Metal #Vingadores #Guerra Civil - Homem de Ferro</code></td>
+</tr>
+<tr>
+<td>Hulkbuster</td>
+<td align="center">Tecnológico</td>
+<td align="center"><code>#Defensivo: Tanque #Herói #Metal #Vingadores</code></td>
+</tr>
+<tr>
+<td>Máquina de combate</td>
+<td align="center">Tecnológico</td>
+<td align="center"><code>#Ofensivo: Dano ao longo do tempo #Herói #Metal #Guerra Civil - Homem de Ferro</code></td>
+</tr>
+<tr>
+<td>Rocky Racum</td>
+<td align="center">Tecnológico</td>
+<td align="center"><code>#Ofensivo:Surto de Dano #Herói #Guardiões da Galáxia</code></td>
+</tr>
+<tr>
+<td>Senhor das Estrelas</td>
+<td align="center">Tecnológico</td>
+<td align="center"><code>#Ofensivo: Dano ao longo do tempo #Herói #Guardiões da Galáxia</code></td>
+</tr>
+<tr>
+<td>Ultron</td>
+<td align="center">Tecnológico</td>
+<td align="center"><code>#Defensivo: Utilidade #Vilão #Metal #Robô #Vilão do Torneio</code></td>
+</tr>
+<tr>
+<td>Visão</td>
+<td align="center">Tecnológico</td>
+<td align="center"><code>#Controle: Negação #Herói #Metal #Robô #Vingadores</code></td>
+</tr>
+<tr>
+<td>Visão (Era de Ultron)</td>
+<td align="center">Tecnológico</td>
+<td align="center"><code>#Controle: Negação #Herói #Metal #Robô #Vingadores #Guerra Civil - Homem de Ferro</code></td>
+</tr>
+<tr>
+<td>Patriota de Ferro</td>
+<td align="center">Tecnológico</td>
+<td align="center"><code>#Defensivo: Sentinela #Herói #Metal #Sexteto Sinistro #Thunderbolts</code></td>
+</tr>
+<tr>
+<td>Guerreiro Civil</td>
+<td align="center">Tecnológico</td>
+<td align="center"><code>#Defensivo: Sentinela #Herói #Metal #Guerra Civil - Homem de Ferro #Guerra Civil - Cap. América</code></td>
+</tr>
+<tr>
+<td>Kang, o Conquistador</td>
+<td align="center">Tecnológico</td>
+<td align="center"><code>#Defensivo: Sentinela #Vilão #Metal #Vilão do Torneio #Chronos Corps</code></td>
+</tr>
+<tr>
+<td>Abominável</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Defensivo: Tanque #Vilão #Chronos Corps</code></td>
+</tr>
+<tr>
+<td>Capitão América</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Defensivo: Sentinela #Herói #Vingadores #S.H.I.E.L.D. #Guerra Civil - Cap. América</code></td>
+</tr>
+<tr>
+<td>Tremor</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Ofensivo: Dano Bruto #Herói #Inumano #S.H.I.E.L.D.</code></td>
+</tr>
+<tr>
+<td>Capitão América WWII</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Defensivo: Sentinela #Herói #Vingadores #S.H.I.E.L.D.</code></td>
+</tr>
+<tr>
+<td>Electro</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Ofensivo: Surto de dano #Vilão #Sexteto Sinistro #Thunderbolts</code></td>
+</tr>
+<tr>
+<td>Homem-Aranha (Peter Parker)</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Defensivo: Utilidade #Herói #Novos Vingadores #Guerra Civil - Homem de Ferro</code></td>
+</tr>
+<tr>
+<td>Homem-Aranha (Miles Morales)</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Controle: Negação #Herói #Novos Vingadores #Campeões</code></td>
+</tr>
+<tr>
+<td>Homem-Formiga</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Defensivo: Tanque #Herói #Metal #Guerra Civil - Cap. América</code></td>
+</tr>
+<tr>
+<td>Hulk</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Defensivo: Tanque #Herói #Illuminati #Vingadores</code></td>
+</tr>
+<tr>
+<td>Hulk Vermelho</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Ofensivo: Dano ao longo do tempo #Vilão #Thunderbolts</code></td>
+</tr>
+<tr>
+<td>Jaqueta amarela</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Controle: Negação #Vilão #Metal #Vilão do Torneio</code></td>
+</tr>
+<tr>
+<td>Joe Fixit</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Defensivo:Utilidade #Vilão #Vilão do Torneio</code></td>
+</tr>
+<tr>
+<td>Rino</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Defensivo: Tanque #Vilão #Sexteto Sinistro</code></td>
+</tr>
+<tr>
+<td>Luke Cage</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Defensivo: Sentinela #Mercenário #Defensores #Thunderbolts</code></td>
+</tr>
+<tr>
+<td>Gwen Aranha</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Defensivo: Utilidade #Herói</code></td>
+</tr>
+<tr>
+<td>Mulher-Hulk</td>
+<td align="center">Científico</td>
+<td align="center"><code>#Ofensivo: Dano bruto #Herói #Força-A</code></td>
+</tr>
+<tr>
+<td>Capitã Marvel</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Ofensivo:Dano Bruto #Herói #Vingadores #Kree #Força-A</code></td>
+</tr>
+<tr>
+<td>Drax, o Destruidor</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Ofensivo: Dano ao longo do tempo #Herói #Guardiões da Galáxia</code></td>
+</tr>
+<tr>
+<td>Gamora</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Ofensivo: Surto de Dano #Herói #Metal #Guardiões da Galáxia</code></td>
+</tr>
+<tr>
+<td>Homem-de-Ferro Superior</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Defensivo: Sentinela #Herói #Illuminati</code></td>
+</tr>
+<tr>
+<td>Miss Marvel (Carol Danvers)</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Ofensivo: Dano bruto #Herói #Vingadores #Kree #Força-A</code></td>
+</tr>
+<tr>
+<td>Miss Marvel (Kamala Khan)</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Ofensivo:Dano Bruto #Herói #Inumano #Campeões #Força-A</code></td>
+</tr>
+<tr>
+<td>Raio Negro</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Ofensivo: Dano Bruto #Herói #Illuminati #Inumano</code></td>
+</tr>
+<tr>
+<td>Ronan, o Acusador</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Controle: Contra-ataque #Vilão #Kree</code></td>
+</tr>
+<tr>
+<td>Thor</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Ofensivo: Surto de dano #Herói #Vingadores #Chronos Corps</code></td>
+</tr>
+<tr>
+<td>Venom</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>Defensivo:Tanque #Vilão #Simbionte #Chronos Corps</code></td>
+</tr>
+<tr>
+<td>Venompool</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Controle: Contra-ataque #Vilão #Simbionte</code></td>
+</tr>
+<tr>
+<td>Groot</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Defensivo:Tanque #Herói #Guardiões da Galáxia</code></td>
+</tr>
+<tr>
+<td>Homem-Aranha Preto</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Defensivo: Utilidade #Herói #Simbionte</code></td>
+</tr>
+<tr>
+<td>Thanos</td>
+<td align="center">Cósmico</td>
+<td align="center"><code>#Defensivo: Tanque #Vilão #Vilão do Torneio</code></td>
+</tr>
+<tr>
+<td>Cavaleiro da Lua</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Ofensivo: Dano Bruto #Mercenário #Defensores</code></td>
+</tr>
+<tr>
+<td>Demolidor (Clássico)</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Ofensivo: Dano Bruto #Herói #Defensores</code></td>
+</tr>
+<tr>
+<td>Demolidor (NetFlix)</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Ofensivo: Dano Bruto #Herói #Defensores</code></td>
+</tr>
+<tr>
+<td>Elektra</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Ofensivo: Dano Bruto #Mercenário #Defensores #Thunderbolts</code></td>
+</tr>
+<tr>
+<td>Gavião Arqueiro</td>
+<td align="center">Habilidade</td>
+<td align="center">`<code>#Ofensivo: Dano ao longo do tempo #Herói #Vingadores #S.H.I.E.L.D. #Guerra Civil - Cap. América</code>
+</td>
+</tr>
+<tr>
+<td>Justiceiro</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Ofensivo: Dano ao longo do tempo #Herói #Defensores</code></td>
+</tr>
+<tr>
+<td>Pantera Negra</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Ofensivo: Dano ao longo do tempo #Herói #Illuminati #Vingadores</code></td>
+</tr>
+<tr>
+<td>Soldado Invernal</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Ofensivo: Dano Bruto #Mercenário #Metal #Guerra Civil - Cap. América</code></td>
+</tr>
+<tr>
+<td>Viuva-Negra</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Ofensivo: Surto de Dano #Mercenário #S.H.I.E.L.D.  #Guerra Civil - Homem de Ferro #Campeões</code></td>
+</tr>
+<tr>
+<td>Ossos Cruzados</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Ofensivo: Dano Bruto #Vilão #Metal</code></td>
+</tr>
+<tr>
+<td>Pantera Negra (Guerra Civil)</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Defensivo: Sentinela #Herói #Guerra Civil - Homem de Ferro</code></td>
+</tr>
+<tr>
+<td>Falcão</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Controle: Contra-ataque #Metal #Guerra Civil - Cap. América</code></td>
+</tr>
+<tr>
+<td>Agente Venom</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Ofensivo: Dano ao longo do tempo #Herói #Guardiões da Galáxia #Simbionte</code></td>
+</tr>
+<tr>
+<td>Karnak</td>
+<td align="center">Habilidade</td>
+<td align="center"><code>#Ofensivo: Dano bruto #Mercenário #Inumano</code></td>
+</tr>
+</tbody>
+</table>
+      </section>
+    </div>
+
+    <!-- FOOTER  
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">MTC - Lista de Campeões maintained by <a href="https://github.com/apunhanhador">ApunhanhadoR</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+-->
+    
+
+  </body>
+</html>
